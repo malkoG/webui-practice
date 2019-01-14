@@ -113,8 +113,10 @@ output = output.map(function(e) {
 }).join("\n")
 
 colors = colors.map (function(e) {
-    return "font-weight: 900; background-color: black; color: " + e;
+    return "font-size: 11pt; font-weight: 900; background-color: black; color: " + e;
 })
+
+console.log(output, ...colors)
 
 </script>
 </head>
