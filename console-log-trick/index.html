@@ -106,8 +106,6 @@ message_colors = messages.map(function(e) {
 
 colors = [...logo_colors, ...message_colors]
 
-console.log(colors)
-
 output = [...logo, ...messages]
 
 output = output.map(function(e) {
@@ -117,9 +115,6 @@ output = output.map(function(e) {
 colors = colors.map (function(e) {
     return "font-weight: 900; background-color: black; color: " + e;
 })
-
-console.log(output, ...colors)
-
 
 </script>
 </head>
