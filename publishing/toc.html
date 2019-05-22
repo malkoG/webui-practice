@@ -1,0 +1,122 @@
+<html>
+  <head>
+    <title>KODINGWARRIOR AWESOME CHALLENGE</title>
+    <style type="text/css">
+      @page {
+        size: A4;
+        margin-top: 0mm;
+        margin-bottom: 0mm;
+      }
+
+      p {
+          page-break-after: always;
+      }
+
+      body {
+        counter-reset: ChapterNo; /* reset chapter number counter */
+        counter-reset: section;
+      }
+
+      ol.toc a::before { /* add chapter number to the table of contents */
+        content: "Chapter " target-counter(attr(href url), ChapterNo) ". ";
+      }
+
+      ol.toc a::after {
+        content: leader(dotted) " " target-counter(attr(href url), page);
+      }
+
+      h1:before {
+        counter-increment: ChapterNo; /* add 1 to chapter number counter */
+        /* Insert 'n' before chapter header (h1) */
+        content: "Chapter " counter(ChapterNo, upper-roman) ": ";
+      }
+
+      @media screen {
+    header.onlyprint, footer.onlyprint{
+        display: none; /* Hide from screen */
+    }
+}
+
+@media print {
+    body { margin: 0mm; padding-top: 20mm; padding-bottom: 20mm }
+
+    .onlyprint { width: 100%; height: 20mm; line-height: 20mm; text-align: center; background-color: #FFF; }
+
+    header.onlyprint {
+        position: fixed; /* Display only on print page (each) */
+        top: 0; /* Because it's header */
+    }
+    footer.onlyprint {
+        position: fixed;
+        bottom: 0; /* Because it's footer */
+    }
+
+    .pageNumber { 
+      counter-increment: section;                 /* Increment the value of section counter by 1 */
+      content: counter(section); 
+    }
+}
+
+    </style>
+  </head>
+  <body>
+    <header class="onlyprint">KODING WARRIOR's AWESOME JOURNEY</header>
+    <footer class="onlyprint">copyright by @kodingwarrior ... page <span class="pageNumber"></span></footer>
+  <h2>Table of Contents</h2>
+<ol class="toc">
+<li><a href="#chapter1">Loomings</a></li>
+<li><a href="#chapter2">The Carpet-Bag</a></li>
+<li><a href="#chapter3">The Spouter-Inn</a></li>
+</ol>
+
+    <h1 id="chapter1">Hello</h1>
+    <p>Quo rem illo perspiciatis facere cupiditate nihil. Deleniti ex praesentium repudiandae necessitatibus ducimus soluta. Incidunt vel facilis est sed. Sed qui aspernatur nesciunt earum ratione vel rerum et dolorum.
+ 
+Quia id accusamus corporis quia quam quam soluta. Aliquam qui ut dolorem nobis rerum illo neque quia ad. Doloremque quo consequatur voluptas harum tenetur esse placeat.
+ 
+Maxime ipsum aliquid non ea facilis dolore. Nulla ut laboriosam adipisci. Rem quidem ut dolorem velit totam autem voluptatem quibusdam rerum. Quasi dolor nisi blanditiis ducimus et. Saepe et neque.</p>
+    
+    <h1 id="chapter2">World</h1>
+    <p>Beatae inventore est est consequatur ut consequatur. Debitis impedit eius nobis voluptas est esse est. Maxime illum veritatis eum molestiae ipsam. Exercitationem facilis minima voluptas laborum qui dignissimos et sit. Sunt similique sunt modi error laboriosam.
+ 
+Veniam reprehenderit amet. Laudantium dignissimos aut veniam soluta nobis. Expedita voluptatem odit cum. Blanditiis facere animi magni aliquam ullam sunt non omnis ullam. Magnam velit enim magni quibusdam veniam et. Sunt tempora quasi dicta aut.
+ 
+Aliquam numquam deserunt ab rerum sed laboriosam dolorem voluptas sint. Dignissimos labore atque dolor soluta. Tenetur fugit eum eligendi itaque vel nostrum neque possimus qui. Error qui repellendus officia eum et itaque sint ut. Quibusdam sit iure laudantium repellat voluptatibus vel quasi ratione optio. Quo eaque corrupti.</p>
+<h1 id="chapter3">World</h1>
+    <p>Beatae inventore est est consequatur ut consequatur. Debitis impedit eius nobis voluptas est esse est. Maxime illum veritatis eum molestiae ipsam. Exercitationem facilis minima voluptas laborum qui dignissimos et sit. Sunt similique sunt modi error laboriosam.
+ 
+Veniam reprehenderit amet. Laudantium dignissimos aut veniam soluta nobis. Expedita voluptatem odit cum. Blanditiis facere animi magni aliquam ullam sunt non omnis ullam. Magnam velit enim magni quibusdam veniam et. Sunt tempora quasi dicta aut.
+ 
+Aliquam numquam deserunt ab rerum sed laboriosam dolorem voluptas sint. Dignissimos labore atque dolor soluta. Tenetur fugit eum eligendi itaque vel nostrum neque possimus qui. Error qui repellendus officia eum et itaque sint ut. Quibusdam sit iure laudantium repellat voluptatibus vel quasi ratione optio. Quo eaque corrupti.</p>
+<h1 id="chapter4">World</h1>
+    <p>Beatae inventore est est consequatur ut consequatur. Debitis impedit eius nobis voluptas est esse est. Maxime illum veritatis eum molestiae ipsam. Exercitationem facilis minima voluptas laborum qui dignissimos et sit. Sunt similique sunt modi error laboriosam.
+ 
+Veniam reprehenderit amet. Laudantium dignissimos aut veniam soluta nobis. Expedita voluptatem odit cum. Blanditiis facere animi magni aliquam ullam sunt non omnis ullam. Magnam velit enim magni quibusdam veniam et. Sunt tempora quasi dicta aut.
+ 
+Aliquam numquam deserunt ab rerum sed laboriosam dolorem voluptas sint. Dignissimos labore atque dolor soluta. Tenetur fugit eum eligendi itaque vel nostrum neque possimus qui. Error qui repellendus officia eum et itaque sint ut. Quibusdam sit iure laudantium repellat voluptatibus vel quasi ratione optio. Quo eaque corrupti.</p>
+<h1 id="chapter5">World</h1>
+    <p>Beatae inventore est est consequatur ut consequatur. Debitis impedit eius nobis voluptas est esse est. Maxime illum veritatis eum molestiae ipsam. Exercitationem facilis minima voluptas laborum qui dignissimos et sit. Sunt similique sunt modi error laboriosam.
+ 
+Veniam reprehenderit amet. Laudantium dignissimos aut veniam soluta nobis. Expedita voluptatem odit cum. Blanditiis facere animi magni aliquam ullam sunt non omnis ullam. Magnam velit enim magni quibusdam veniam et. Sunt tempora quasi dicta aut.
+ 
+Aliquam numquam deserunt ab rerum sed laboriosam dolorem voluptas sint. Dignissimos labore atque dolor soluta. Tenetur fugit eum eligendi itaque vel nostrum neque possimus qui. Error qui repellendus officia eum et itaque sint ut. Quibusdam sit iure laudantium repellat voluptatibus vel quasi ratione optio. Quo eaque corrupti.</p>
+<h1>World</h1>
+    <p>Beatae inventore est est consequatur ut consequatur. Debitis impedit eius nobis voluptas est esse est. Maxime illum veritatis eum molestiae ipsam. Exercitationem facilis minima voluptas laborum qui dignissimos et sit. Sunt similique sunt modi error laboriosam.
+ 
+Veniam reprehenderit amet. Laudantium dignissimos aut veniam soluta nobis. Expedita voluptatem odit cum. Blanditiis facere animi magni aliquam ullam sunt non omnis ullam. Magnam velit enim magni quibusdam veniam et. Sunt tempora quasi dicta aut.
+ 
+Aliquam numquam deserunt ab rerum sed laboriosam dolorem voluptas sint. Dignissimos labore atque dolor soluta. Tenetur fugit eum eligendi itaque vel nostrum neque possimus qui. Error qui repellendus officia eum et itaque sint ut. Quibusdam sit iure laudantium repellat voluptatibus vel quasi ratione optio. Quo eaque corrupti.</p>
+<h1>World</h1>
+    <p>Beatae inventore est est consequatur ut consequatur. Debitis impedit eius nobis voluptas est esse est. Maxime illum veritatis eum molestiae ipsam. Exercitationem facilis minima voluptas laborum qui dignissimos et sit. Sunt similique sunt modi error laboriosam.
+ 
+Veniam reprehenderit amet. Laudantium dignissimos aut veniam soluta nobis. Expedita voluptatem odit cum. Blanditiis facere animi magni aliquam ullam sunt non omnis ullam. Magnam velit enim magni quibusdam veniam et. Sunt tempora quasi dicta aut.
+ 
+Aliquam numquam deserunt ab rerum sed laboriosam dolorem voluptas sint. Dignissimos labore atque dolor soluta. Tenetur fugit eum eligendi itaque vel nostrum neque possimus qui. Error qui repellendus officia eum et itaque sint ut. Quibusdam sit iure laudantium repellat voluptatibus vel quasi ratione optio. Quo eaque corrupti.</p>
+<h1>World</h1>
+    <p>Beatae inventore est est consequatur ut consequatur. Debitis impedit eius nobis voluptas est esse est. Maxime illum veritatis eum molestiae ipsam. Exercitationem facilis minima voluptas laborum qui dignissimos et sit. Sunt similique sunt modi error laboriosam.
+ 
+Veniam reprehenderit amet. Laudantium dignissimos aut veniam soluta nobis. Expedita voluptatem odit cum. Blanditiis facere animi magni aliquam ullam sunt non omnis ullam. Magnam velit enim magni quibusdam veniam et. Sunt tempora quasi dicta aut.
+ 
+Aliquam numquam deserunt ab rerum sed laboriosam dolorem voluptas sint. Dignissimos labore atque dolor soluta. Tenetur fugit eum eligendi itaque vel nostrum neque possimus qui. Error qui repellendus officia eum et itaque sint ut. Quibusdam sit iure laudantium repellat voluptatibus vel quasi ratione optio. Quo eaque corrupti.</p>
+  </body>
+</html>
